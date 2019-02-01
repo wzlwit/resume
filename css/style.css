@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+}
+
+.colorreference {
+    color: #a9071e #7851a9 #1034a6 #0087bd #ffd300;
+    border-color: #aad1d8 #a0d36e #facb47 #fdfae1;
+    color: whitesmoke;
+}
+
+div {
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 20vw;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+a:hover {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-style: bold;
+    padding: 0 0.3em 0.15em;
+    background-color: #fff;
+    border: #fff 3px outset;
+    border-radius: 5px;
+    line-height: 1em;
+    box-shadow: 0 0 5px 1px #3f3f3f;
+    
+}
+
+.container {
+    margin: 0 auto 5vw;
+    background-color: honeydew;
+}
+
+#about {
+    background-color: #fdfae1;
+}
+
+#gallery {
+    background-color: #aad1d8;
+}
+
+#skills {
+    background-color: honeydew;
+}
+
+#experience {
+    background-color: #a0d36e;
+}
+
+#education {
+    background-color: #fdfae1;
+}
+
+@media screen and(max-width:1200px) {}
+
+@media screen and(max-width:992px) {}
+
+@media screen and(max-width:768px) {}
+
+@media screen and(max-width:576px) {}

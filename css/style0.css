@@ -117,7 +117,7 @@ img {
 
 .topbar a:hover {
     background-color: #1034a6;
-    color:#fff;
+    color: #fff;
 }
 
 /* banner */
@@ -666,8 +666,9 @@ table.about-info tr:last-child td {
 .stats {
     background: url(../img/stats.jpg) no-repeat 0px 0px;
     background-size: cover;
-	background-attachment:fixed;
+    background-attachment: fixed;
 }
+
 .count-grid span {
     background: #ff9900;
     display: block;
@@ -679,10 +680,12 @@ table.about-info tr:last-child td {
     left: 12%;
     bottom: 43%;
 }
+
 .count-grid h4 {
     font-size: 4em;
-	color:#fff;
+    color: #fff;
 }
+
 .count-grid h5 {
     font-size: 1.1em;
     color: #eee;
@@ -690,6 +693,7 @@ table.about-info tr:last-child td {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .count-grid i {
     font-size: 2em;
     color: #146eb4;
@@ -703,34 +707,39 @@ table.about-info tr:last-child td {
     color: #fff;
     padding: 0.3em 0;
     position: relative;
-	font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
+
 .row h3 span {
     color: #fff;
 }
+
 .count-grid {
-    padding:0 40px 40px;
+    padding: 0 40px 40px;
 }
+
 /*--parallax-js--*/
+
 /* ---- stats.js ---- */
 
-#stats,
-.count-particles{
-  -webkit-user-select: none;
+#stats, .count-particles {
+    -webkit-user-select: none;
 }
 
-#stats{
-  overflow: hidden;
+#stats {
+    overflow: hidden;
 }
 
-.count-particles{
-  border-radius: 0 0 3px 3px;
+.count-particles {
+    border-radius: 0 0 3px 3px;
 }
+
 .statsimg {
     background: url(../images/stats.jpg) no-repeat 0px 0px;
     background-size: cover;
-	background-attachment:fixed;
+    background-attachment: fixed;
 }
+
 .statsimg h3 {
     font-size: 40px;
     color: #fff;
@@ -738,9 +747,11 @@ table.about-info tr:last-child td {
     text-transform: uppercase;
     padding: 20px 0;
 }
+
 .quote {
     padding-top: 16%;
 }
+
 .statsimg span {
     background: #ffffff;
     display: block;
@@ -748,10 +759,8 @@ table.about-info tr:last-child td {
     height: 2px;
     margin: 0 auto;
 }
+
 /*--//Technical-Skills-section--*/
-
-
-
 
 /* keyframes */
 
@@ -844,7 +853,7 @@ table.about-info tr:last-child td {
         margin: 0 auto 40px;
         padding-bottom: 40px;
     }
-    h3.heading{
+    h3.heading {
         width: 60%;
     }
     .banner {
@@ -880,7 +889,6 @@ table.about-info tr:last-child td {
     #about-slide .carousel-item p {
         font-size: 16px;
         line-height: 1.2em;
-
     }
     #about .carousel-item {
         height: 300px;
@@ -923,17 +931,17 @@ table.about-info tr:last-child td {
         margin-bottom: 0.1em;
     }
     .count-grid {
-		padding: 0 10px 0px;
-		float: left;
-		width: 25%;
-	}
-	.numscroller {
-		font-size: 3.5em;
-	}
-	.count-grid span {
-		left: 2%;
-		bottom: 30%;
-	}
+        padding: 0 10px 0px;
+        float: left;
+        width: 25%;
+    }
+    .numscroller {
+        font-size: 3.5em;
+    }
+    .count-grid span {
+        left: 2%;
+        bottom: 30%;
+    }
 }
 
 @media screen and (max-width:950px) {
@@ -943,8 +951,8 @@ table.about-info tr:last-child td {
         padding-top: 0.1em;
     }
     .numscroller {
-		font-size: 3.5em;
-	}
+        font-size: 3.5em;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -1125,9 +1133,9 @@ table.about-info tr:last-child td {
         height: 24px;
     }
     .stats {
-		padding: 0 1em;
+        padding: 0 1em;
     }
-    .stats h3.heading{
+    .stats h3.heading {
         width: 80%;
         font-size: 24px;
     }
@@ -1136,9 +1144,8 @@ table.about-info tr:last-child td {
         letter-spacing: 0;
     }
     .numscroller {
-		font-size: 3em;
-	}
-
+        font-size: 3em;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -1148,16 +1155,16 @@ table.about-info tr:last-child td {
         padding: 0.5em 0;
     }
     .numscroller {
-		font-size: 1.5em;
+        font-size: 1.5em;
     }
     .count-grid h5 {
         font-size: 0.5em;
         letter-spacing: 0;
     }
-    h3.heading{
+    h3.heading {
         width: 90%;
     }
-    .stats h3.heading{
+    .stats h3.heading {
         width: 100%;
     }
 }
