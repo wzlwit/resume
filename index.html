@@ -23,13 +23,14 @@
     <link rel="stylesheet" href="./css/bars.css">
 
     <!-- personal -->
-    <link rel="stylesheet" href="./css/style0.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- header -->
     <div id="home">
-        <!-- menu End-->
+
+        <!-- menu-->
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownmenuBEndutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-bars"></i>
@@ -74,7 +75,7 @@
             <!-- words animation End -->
 
             <!-- social -->
-            <div class="social">
+            <div class="social" id="social">
                 <li><a href="https://github.com/wzlwit" class="github" target="_blank">
                         <div class="front"><i class="fa fa-github"></i></div>
                         <div class="back"><i class="fa fa-github"></i></div>
@@ -97,7 +98,7 @@
         <h3 class="heading">About&nbsp;Me</h3>
         <div class="row">
             <div class="col-md-6 aboutleft">
-                <img src="img/about.png" alt="this is a photo" />
+                <!-- <img src="img/about.png" alt="this is a photo" /> -->
             </div>
             <div class="col-md-6 aboutright">
                 <div id="about-slide" class="carousel slide" data-ride="carousel">
@@ -105,7 +106,9 @@
                         <div class="carousel-item active">
                             <table class="about-info">
                                 <tr>
-                                    <td colspan="3">Personal Information</td>
+                                    <td colspan="3">
+                                        <h4> Personal Information</h4>
+                                    </td>
                                 </tr>
                                 <tr style="width:20px"></tr>
                                 <tr>
@@ -138,15 +141,15 @@
                                     <td> Linkin</td>
                                     <td><a href="https://www.linkedin.com/in/z5809a9173" target="_blank">linkedin.com/in/z5809a9173</a></td>
                                 </tr>
-                                <tr style="height:30px"></tr>
+                                <tr style="height:3vw"></tr>
                                 <tr>
                                     <td colspan="3"><a href="./img/about.JPG"><i class="fa fa-download"></i> Download CV</li></a></td>
                                 </tr>
                             </table>
                         </div>
                         <div class="carousel-item">
-                            <h3>Programmer and Web Designer</h3>
-                            <h4>1.5+ years experience</h4>
+                            <h4>Programmer & Web Designer</h4>
+                            <h5>1.5+ years experience</h5>
                             <p>Solid backgrounds for programming with logical and critical thinking </p>
                             <p>Good at algorithms and complex techniques in a fast pace</p>
                             <p>Efficiency oriented and motivated high-achiever with</p>
@@ -171,137 +174,150 @@
     <!-- Gallery -->
     <div class="gallery container" id="gallery">
         <h3 class="heading">Portfolio</h3>
-        <p>(the card can be flipped over)</p>
+        <p>* flip it <i class="fa fa-smile-o"></i> *</p>
+        <br>
         <div class="row">
-            <div class="card-container col-md-4 col-sm-6">
-                <div class="card">
-                    <div class="front">
-                        <img src="./img/Onlinestore.png" alt="a photo for login validation">
-                    </div>
-                    <div class="cardback">
-                        <fieldset>
-                            <legEnd>Online Store</legEnd>
-                            <ul>
-                                <li>PHP and MySQL</li>
-                                <li>3 account types</li>
-                                <li>REnder based on accounts</li>
-                                <li>Searh and order</li>
-                                <li>Accs/order manange</li>
-                            </ul>
-                        </fieldset>
-                        <a target="_blank" href="https://github.com/wzlwit/OnlineStore">
-                            <p>click to have a look</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-container col-md-4 col-sm-6">
-                <div class="card">
-                    <div class="front">
-                        <img src="./img/TipCalculator.png" alt="a photo for login validation">
-                    </div>
-                    <div class="cardback">
-                        <fieldset>
-                            <legEnd>Tip Calculater</legEnd>
-                            <ul>
-                                <li>Inputs validation</li>
-                                <li>Value selected or input</li>
-                                <li>Show the result for each person</li>
-                                <li>Message of toy</li>
-                            </ul>
-                        </fieldset>
-                        <a target="_blank" href="https://wzlwit.github.io/TipCalculator/. ">
-                            <p>click to have a look</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-container col-md-4 col-sm-6">
-                <div class="card">
-                    <div class="front">
-                        <img src="./img/CssGame.png" alt="a photo for CSS game">
-                    </div>
-                    <div class="cardback">
-                        <fieldset>
-                            <legEnd>CSS game</legEnd>
-                            <ul>
-                                <li>Pure CSS/Html Game</li>
-                                <li>4 different item clickable</li>
-                                <li>Animation for each item </li>
-                            </ul>
-                        </fieldset>
-                        <a target="_blank" href="https://wzlwit.github.io/CssGame/">
 
-                            <p>click to have a look</p>
-                        </a>
+            <div class="col-md-4 col-sm-6 gallery-frame">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <img src="./img/Onlinestore.png" alt="a photo for login validation">
+                        </div>
+                        <div class="cardback">
+                            <fieldset>
+                                <legend>Online Store</legend>
+                                <ul>
+                                    <li>PHP and MySQL</li>
+                                    <li>3 account types</li>
+                                    <li>REnder based on accounts</li>
+                                    <li>Searh and order</li>
+                                    <li>Accs/order manange</li>
+                                </ul>
+                            </fieldset>
+                            <a target="_blank" href="https://github.com/wzlwit/OnlineStore">
+                                <p>click to have a look</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card-container col-md-4 col-sm-6">
-                <div class="card">
-                    <div class="front">
-                        <img src="./img/Calculator.png" alt="a photo for calculator">
+            <div class="col-md-4 col-sm-6 gallery-frame">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <img src="./img/TipCalculator.png" alt="a photo for login validation">
+                        </div>
+                        <div class="cardback">
+                            <fieldset>
+                                <legend>Tip Calculater</legend>
+                                <ul>
+                                    <li>Inputs validation</li>
+                                    <li>Value selected or input</li>
+                                    <li>Show the result for each person</li>
+                                    <li>Message of toy</li>
+                                </ul>
+                            </fieldset>
+                            <a target="_blank" href="https://wzlwit.github.io/TipCalculator/. ">
+                                <p>click to have a look</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="cardback">
-                        <fieldset>
-                            <legEnd>Calculator</legEnd>
-                            <ul>
-                                <li>Two operands</li>
-                                <li>Negative numbers</li>
-                                <li>Operator changable</li>
-                            </ul>
-                        </fieldset>
-                        <a target="_blank" href="https://github.com/wzlwit/Calculator">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-frame">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <img src="./img/CssGame.png" alt="a photo for CSS game">
+                        </div>
+                        <div class="cardback">
+                            <fieldset>
+                                <legend>CSS game</legend>
+                                <ul>
+                                    <li>Pure CSS/Html Game</li>
+                                    <li>4 different item clickable</li>
+                                    <li>Animation for each item </li>
+                                </ul>
+                            </fieldset>
+                            <a target="_blank" href="https://wzlwit.github.io/CssGame/">
 
-                            <p>click to have a look</p>
-                        </a>
+                                <p>click to have a look</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card-container col-md-4 col-sm-6">
-                <div class="card">
-                    <div class="front">
-                        <img src="./img/Report.png" alt="a photo for student report">
-                    </div>
-                    <div class="cardback">
-                        <fieldset>
-                            <legEnd>Report</legEnd>
-                            <ul>
-                                <li>Array of objects for student information</li>
-                                <li>Query by multiple values all at once</li>
-                                <li>Search, order, modify information and more</li>
-                            </ul>
-                        </fieldset>
-                        <a target="_blank" href="https://wzlwit.github.io/StudentReport/">
+            <div class="col-md-4 col-sm-6 gallery-frame">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <img src="./img/Calculator.png" alt="a photo for calculator">
+                        </div>
+                        <div class="cardback">
+                            <fieldset>
+                                <legend>Calculator</legend>
+                                <ul>
+                                    <li>Two operands</li>
+                                    <li>Negative numbers</li>
+                                    <li>Operator changable</li>
+                                </ul>
+                            </fieldset>
+                            <a target="_blank" href="https://github.com/wzlwit/Calculator">
 
-                            <p>click to have a look</p>
-                        </a>
+                                <p>click to have a look</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card-container col-md-4 col-sm-6">
-                <div class="card">
-                    <div class="front">
-                        <img src="./img/ReactGame1.png" alt="a photo for React Game">
+            <div class="col-md-4 col-sm-6 gallery-frame">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <img src="./img/Report.png" alt="a photo for student report">
+                        </div>
+                        <div class="cardback">
+                            <fieldset>
+                                <legend>Report</legend>
+                                <ul>
+                                    <li>Array of objects for student information</li>
+                                    <li>Query by multiple values all at once</li>
+                                    <li>Search, order, modify information and more</li>
+                                </ul>
+                            </fieldset>
+                            <a target="_blank" href="https://wzlwit.github.io/StudentReport/">
+
+                                <p>click to have a look</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="cardback">
-                        <fieldset>
-                            <legEnd>React Game</legEnd>
-                            <ul>
-                                <li>Using React</li>
-                                <li>Passing State and Props</li>
-                                <li>Search, order, modify information and more</li>
-                            </ul>
-                        </fieldset>
-                        <a target="_blank" href="https://github.com/wzlwit/JavaScript/tree/master/React/Workshop/ReactGame1">
-                            <p>click to have a look</p>
-                        </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-frame">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <img src="./img/ReactGame1.png" alt="a photo for React Game">
+                        </div>
+                        <div class="cardback">
+                            <fieldset>
+                                <legend>React Game</legend>
+                                <ul>
+                                    <li>Using React</li>
+                                    <li>Passing State and Props</li>
+                                    <li>Search, order, modify information and more</li>
+                                </ul>
+                            </fieldset>
+                            <a target="_blank" href="https://github.com/wzlwit/JavaScript/tree/master/React/Workshop/ReactGame1">
+                                <p>click to have a look</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
-
         <!-- gallery slide -->
         <div id="gallery-slider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -322,7 +338,7 @@
                             <div class="cardback">
                                 <fieldset class="FsetSlide">
                                     <a target="_blank" href="https://github.com/wzlwit/OnlineStore">
-                                        <legEnd> Online Store</legEnd>
+                                        <legend> Online Store</legend>
                                     </a>
                                     <ul>
                                         <li>PHP and MySQL</li>
@@ -345,7 +361,7 @@
                             <div class="cardback">
                                 <fieldset class="FsetSlide">
                                     <a target="_blank" href="https://wzlwit.github.io/TipCalculator/. ">
-                                        <legEnd>Tip Calculater</legEnd>
+                                        <legend>Tip Calculater</legend>
                                     </a>
                                     <ul>
                                         <li>Inputs validation</li>
@@ -367,7 +383,7 @@
                             <div class="cardback">
                                 <fieldset class="FsetSlide">
                                     <a target="_blank" href="https://wzlwit.github.io/CssGame/">
-                                        <legEnd>CSS game</legEnd>
+                                        <legend>CSS game</legend>
                                     </a>
                                     <ul>
                                         <li>Pure CSS/Html Game</li>
@@ -388,7 +404,7 @@
                             <div class="cardback">
                                 <fieldset class="FsetSlide">
                                     <a target="_blank" href="https://github.com/wzlwit/Calculator">
-                                        <legEnd>Calculator</legEnd>
+                                        <legend>Calculator</legend>
                                     </a>
                                     <ul>
                                         <li>Two operands</li>
@@ -411,7 +427,7 @@
                             <div class="cardback">
                                 <fieldset class="FsetSlide">
                                     <a target="_blank" href="https://wzlwit.github.io/StudentReport/">
-                                        <legEnd>Report</legEnd>
+                                        <legend>Report</legend>
                                     </a>
                                     <ul>
                                         <li>Array of objects for student information</li>
@@ -432,7 +448,7 @@
                             <div class="cardback">
                                 <fieldset class="FsetSlide">
                                     <a target="_blank" href="https://github.com/wzlwit/JavaScript/tree/master/React/Workshop/ReactGame1">
-                                        <legEnd>React Game</legEnd>
+                                        <legend>React Game</legend>
                                     </a>
                                     <ul>
                                         <li>Using React</li>
@@ -523,8 +539,8 @@
             <!-- bar slides for mobile  End-->
 
             <div class="col-md-5 skillsright">
-                <!--                     <h3 class="bar-h3">About my skills</h3> -->
-                <h5 class="bar-p"><i>Thinking in programming way!</i></h5>
+                <!--                     <h4 class="bar-h4">About my skills</h4> -->
+                <h4 class="bar-p">Thinking in programming way!</h4>
 
                 <!-- <p class="bar-p">Deep and thorough understanding about Programming and Database Management.</p> -->
 
@@ -546,52 +562,50 @@
     <div class="experience container" id="experience">
 
         <h3 class="heading">Experience</h3>
-
-        
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="grid">
-                        <h3><i class="fa fa-magic"></i>Advacned Polyer Materials</h3>
-                        <h4>Research Assistant</h4>
-                        <p>Research and develop</p>
-                        <p>Improve production process</p>
-                        <p>Supplier to Sigma-Aldrich etc.</p>
-                        <h4><b>Year</b> : 2017-2018</h4>
-                    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="grid">
+                    <h4><i class="fa fa-magic"></i>Advacned Polyer Materials</h4>
+                    <h5>Research Assistant</h5>
+                    <p>Research and develop</p>
+                    <p>Improve production process</p>
+                    <p>Supplier to Sigma-Aldrich etc.</p>
+                    <h5><b>Year</b> : 2017-2018</h5>
                 </div>
-                <div class="col-md-6">
-                    <div class="grid">
-                        <h3><i class="fa fa-flask"></i>Scott Chemicals Qingdao</h3>
-                        <h4>It Assistant / Import&export Manager</h4>
-                        <p>Inner website develop</p>
-                        <p>Local database maintanence</p>
-                        <p>Data queries and report</p>
-                        <h4><b>Year</b> : 2013-2015</h4>
-                    </div>
-
-                </div>
-
-                <div class="col-md-6">
-                    <div class="grid">
-                        <h3><i class="fa fa-plane"></i>Zhongbao Investment</h3>
-                        <h4>Assitant General</h4>
-                        <p>Website management</p>
-                        <p>Interantional trading</p>
-                        <h4><b>Year</b> : 2011-2012</h4>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="grid">
-                        <h3><i class="fa fa-cab"></i>Qingdao Jianghong Vehicals</h3>
-                        <h4>Technician</h4>
-                        <p>Research and development</p>
-                        <p>Workshop management</p>
-                        <h4><b>Year</b> : 2008-2009</h4>
-                    </div>
-                </div>
-                <div class='clearfix'></div>
             </div>
-        
+            <div class="col-md-6">
+                <div class="grid">
+                    <h4><i class="fa fa-flask"></i>Scott Chemicals Qingdao</h4>
+                    <h5>It Assistant / Import&export Manager</h5>
+                    <p>Inner website develop</p>
+                    <p>Local database maintanence</p>
+                    <p>Data queries and report</p>
+                    <h5><b>Year</b> : 2013-2015</h5>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="grid">
+                    <h4><i class="fa fa-plane"></i>Zhongbao Investment</h4>
+                    <h5>Assitant General</h5>
+                    <p>Website management</p>
+                    <p>Interantional trading</p>
+                    <h5><b>Year</b> : 2011-2012</h5>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="grid">
+                    <h4><i class="fa fa-cab"></i>Qingdao Jianghong Vehicals</h4>
+                    <h5>Technician</h5>
+                    <p>Research and development</p>
+                    <p>Workshop management</p>
+                    <h5><b>Year</b> : 2008-2009</h5>
+                </div>
+            </div>
+            <div class='clearfix'></div>
+        </div>
+
 
         <!-- exp slider -->
         <div id="exp-slider" class="carousel slide container" data-ride="carousel">
@@ -604,40 +618,40 @@
             <div class="carousel-inner col-12">
                 <div class="carousel-item active">
                     <div class="grid">
-                        <h3><i class="fa fa-magic"></i>Advacned Polyer Materials</h3>
-                        <h4>Research Assistant</h4>
+                        <h4><i class="fa fa-magic"></i>Advacned Polyer Materials</h4>
+                        <h5>Research Assistant</h5>
                         <p>Research and develop</p>
                         <p>Improve production process</p>
                         <p>Supplier to Sigma-Aldrich etc.</p>
-                        <h4><b>Year</b> : 2017-2018</h4>
+                        <h5><b>Year</b> : 2017-2018</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="grid">
-                        <h3><i class="fa fa-flask"></i>Scott Chemicals Qingdao</h3>
-                        <h4>It Assistant / Import&export Manager</h4>
+                        <h4><i class="fa fa-flask"></i>Scott Chemicals Qingdao</h4>
+                        <h5>It Assistant / Import&export Manager</h5>
                         <p>Inner website develop</p>
                         <p>Local database maintanence</p>
                         <p>Data queries and report</p>
-                        <h4><b>Year</b> : 2013-2015</h4>
+                        <h5><b>Year</b> : 2013-2015</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="grid">
-                        <h3><i class="fa fa-plane"></i>Zhongbao Investment</h3>
-                        <h4>Assitant General</h4>
+                        <h4><i class="fa fa-plane"></i>Zhongbao Investment</h4>
+                        <h5>Assitant General</h5>
                         <p>Website management</p>
                         <p>Interantional trading</p>
-                        <h4><b>Year</b> : 2011-2012</h4>
+                        <h5><b>Year</b> : 2011-2012</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="grid">
-                        <h3><i class="fa fa-cab"></i>Qingdao Jianghong Vehicals</h3>
-                        <h4>Technician</h4>
+                        <h4><i class="fa fa-cab"></i>Qingdao Jianghong Vehicals</h4>
+                        <h5>Technician</h5>
                         <p>Research and development</p>
                         <p>Workshop management</p>
-                        <h4><b>Year</b> : 2008-2009</h4>
+                        <h5><b>Year</b> : 2008-2009</h5>
                     </div>
                 </div>
             </div>
@@ -658,47 +672,47 @@
     <!-- education -->
     <div class="education container" id="education">
         <h3 class="heading">Education</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="grid">
-                        <h3><img src="./img/John-Abbott-College.png"></img>John Abbott College</h3>
-                        <h4>Internet Programming and Database</h4>
-                        <h5>A.E.C.</h5>
-                        <p>Best performance with advanced knowledge</p>
-                        <h4><b>Year</b> : 2018-2019</h4>
-                    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="grid">
+                    <h4><img src="./img/John-Abbott-College.png"></img>John Abbott College</h4>
+                    <h5>Internet Programming and Database</h5>
+                    <h6>A.E.C.</h6>
+                    <p>Best performance with advanced knowledge</p>
+                    <h5><b>Year</b> : 2018-2019</h5>
                 </div>
-                <div class="col-md-6">
-                    <div class="grid">
-                        <h3><img src="./img/vanier.png"></img>Vanier College</h3>
-                        <h4>Web and Date Programming</h4>
-                        <h5>A.E.C.</h5>
-                        <p>Best performance with the highest scores</p>
-                        <h4><b>Year</b> : 2018</h4>
-                    </div>
-
-                </div>
-                <div class="col-md-6">
-                    <div class="grid">
-                        <h3><img src="./img/unsw.jpg"></img>University of New South Wales</h3>
-                        <h4>Mechanical Engineering</h4>
-                        <h5>Master of Engineering</h5>
-                        <p>UCPRC scholarship granted by Australia</p>
-                        <h4><b>Year</b> : 2009-2011</h4>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="grid">
-                        <h3><img src="./img/QDUni.png"></img>Qingdao University, China</h3>
-                        <h4>Material Processing</h4>
-                        <h5>Master of Engineering</h5>
-                        <p>Best performance with scholarship awarded every year</p>
-                        <h4><b>Year</b> : 2011-2013</h4>
-                    </div>
-                </div>
-                <div class='clearfix'></div>
             </div>
-  
+            <div class="col-md-6">
+                <div class="grid">
+                    <h4><img src="./img/vanier.png"></img>Vanier College</h4>
+                    <h5>Web and Date Programming</h5>
+                    <h6>A.E.C.</h6>
+                    <p>Best performance with the highest scores</p>
+                    <h5><b>Year</b> : 2018</h5>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="grid">
+                    <h4><img src="./img/unsw.jpg"></img>University of New South Wales</h4>
+                    <h5>Mechanical Engineering</h5>
+                    <h6>Master of Engineering</h6>
+                    <p>UCPRC scholarship granted by Australia</p>
+                    <h5><b>Year</b> : 2009-2011</h5>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="grid">
+                    <h4><img src="./img/QDUni.png"></img>Qingdao University, China</h4>
+                    <h5>Material Processing</h5>
+                    <h6>Master of Engineering</h6>
+                    <p>Best performance with scholarship awarded every year</p>
+                    <h5><b>Year</b> : 2011-2013</h5>
+                </div>
+            </div>
+            <div class='clearfix'></div>
+        </div>
+
         <!-- edu slider -->
         <div id="edu-slider" class="carousel slide container" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -710,38 +724,38 @@
             <div class="carousel-inner col-12">
                 <div class="carousel-item active">
                     <div class="grid">
-                        <h3>John Abbott College</h3>
-                        <h4>Internet Programming and Database</h4>
-                        <h5>A.E.C.</h5>
+                        <h4>John Abbott College</h4>
+                        <h5>Internet Programming and Database</h5>
+                        <h6>A.E.C.</h6>
                         <p>Best performance with advanced knowledge</p>
-                        <h4><b>Year</b> : 2018-2019</h4>
+                        <h5><b>Year</b> : 2018-2019</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="grid">
-                        <h3>Vanier College</h3>
-                        <h4>Web and Date Programming</h4>
-                        <h5>A.E.C.</h5>
+                        <h4>Vanier College</h4>
+                        <h5>Web and Date Programming</h5>
+                        <h6>A.E.C.</h6>
                         <p>Best performance with the highest scores</p>
-                        <h4><b>Year</b> : 2018</h4>
+                        <h5><b>Year</b> : 2018</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="grid">
-                        <h3>University of New South Wales</h3>
-                        <h4>Mechanical Engineering</h4>
-                        <h5>Master of Engineering</h5>
+                        <h4>University of New South Wales</h4>
+                        <h5>Mechanical Engineering</h5>
+                        <h6>Master of Engineering</h6>
                         <p>UCPRC scholarship granted by Australia</p>
-                        <h4><b>Year</b> : 2009-2011</h4>
+                        <h5><b>Year</b> : 2009-2011</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="grid">
-                        <h3>Qingdao University, China</h3>
-                        <h4>Material Processing</h4>
-                        <h5>Master of Engineering</h5>
+                        <h4>Qingdao University, China</h4>
+                        <h5>Material Processing</h5>
+                        <h6>Master of Engineering</h6>
                         <p>Best performance with scholarship awarded every year</p>
-                        <h4><b>Year</b> : 2011-2013</h4>
+                        <h5><b>Year</b> : 2011-2013</h5>
                     </div>
                 </div>
             </div>
@@ -765,22 +779,22 @@
             <div class="col-md-3 col-sm-3 col-3 count-grid">
                 <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='120' data-delay='1' data-increment="1">120</div>
                 <span></span>
-                <h5>Projects done</h5>
+                <h6>Projects done</h6>
             </div>
             <div class="col-md-3 col-sm-3 col-3  count-grid">
                 <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='172' data-delay='1' data-increment="1">172</div>
                 <span></span>
-                <h5>New Companies</h5>
+                <h6>New Companies</h6>
             </div>
             <div class="col-md-3 col-sm-3 col-3  count-grid">
                 <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='102' data-delay='1' data-increment="1">102</div>
                 <span></span>
-                <h5>Web designs</h5>
+                <h6>Web designs</h6>
             </div>
             <div class="col-md-3 col-sm-3 col-3  count-grid">
                 <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='156' data-delay='1' data-increment="1">156</div>
                 <span></span>
-                <h5>Happy clients</h5>
+                <h6>Happy clients</h6>
             </div>
             <div class="clearfix"></div>
         </div>
