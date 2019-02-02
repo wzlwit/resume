@@ -1,6 +1,5 @@
 .colorreference {
-    color: #a9071e #7851a9 #1034a6 #0087bd #ffd300;
-    border-color: #aad1d8 #a0d36e #facb47 #fdfae1;
+    color: #a9071e #1034a6 #f90 #cfcb47;
 }
 
 * {
@@ -33,13 +32,23 @@ h3 {
     text-align: center;
     padding: 0.5em 0;
     font-size: 40px;
-    color: orange;
+    color: #f90;
     text-transform: uppercase;
     font-weight: 700;
 }
 
-h4, legend {
-    font-size: 34px;
+h4 {
+    font-size: 32px;
+    color: #1034a6;
+    text-align: center;
+}
+
+#skills h4 {
+    font-style: italic;
+}
+
+td a {
+    color: #1034a6;
 }
 
 h5 {
@@ -50,11 +59,12 @@ h6 {
     font-size: 24;
 }
 
-h1, h2, h3, h4, legend, h5, h6 {
+h1, h2, h3, h4 h5, h6 {
     font-family: Georgia, serif;
+    line-height: 1.1em;
 }
 
-p, td, a, i, fieldset, li {
+p, td, a, i, li {
     font-size: 20px;
     line-height: 1.05em;
 }
@@ -77,8 +87,8 @@ a:hover {
 
 .container {
     margin: 0 auto 5vw;
-    padding: 2vw 5vw;
-    background-color: #fdfae1;
+    padding: 1vw 2vw;
+    background-color: #fafae1;
 }
 
 /* #about {
@@ -93,7 +103,7 @@ a:hover {
     background-color: honeydew;
 }
 
-#experience {
+ {
     background-color: #a0d36e;
 }
 
@@ -172,7 +182,7 @@ a:hover {
 }
 
 h1 {
-    color: orange;
+    color: #f90;
     font-size: 4.5vw;
     font-weight: 700;
     text-transform: uppercase;
@@ -274,23 +284,23 @@ h2 {
 .social a {
     display: inline-block;
     float: none;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
     transition: 0.5s;
     transform-style: preserve-3d;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .social .front, .social .back {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateZ(18px);
+    transform: translateZ(25px);
     backface-visibility: visible;
 }
 
@@ -334,12 +344,11 @@ a.linkedin .front {
 /* about */
 
 .carousel-inner {
-    padding-top: 2vw;
+    padding: 2vw 0 0;
 }
 
-.aboutleft img {
-    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.6);
-    margin-top: 10%;
+.aboutleft {
+    box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.6);
 }
 
 img {
@@ -411,7 +420,7 @@ td {
     width: 60%;
     padding: 10vw 5vw;
     max-width: 500px;
-    height:100px;
+    height: 100px;
 }
 
 .aboutright {
@@ -495,24 +504,22 @@ td {
     margin: 0 auto;
 }
 
-.cardback fieldset {
-    width: 90%;
-    margin: 40px 0 0 20%;
-    width: 80%;
-    z-index: 50;
+.cardback {
+    padding: 36px 0 0;
 }
 
-.cardback fieldset legend {
+.cardback ul {
+    padding: 0 5% 0 15%;
+}
+
+.cardback h4 {
     color: #a9071e;
+    text-align: center;
 }
 
-.cardback fieldset li {
+.cardback li {
     line-height: 1.1em;
-    color: #1034a6
-}
-
-.cardback a {
-    color: #0087bd
+    color: #1034a6;
 }
 
 #gallery #gallery-slider {
@@ -563,13 +570,63 @@ div.bar_group__bar.thin {
     padding-top: 10px;
 }
 
-/* #skills .row p:first-child {
-    font-size: 24px;
-} */
+/* experience */
 
-/* .skillsright .bar-p ul {
-    font-size: 24px;
-} */
+#experience .carousel-inner {
+    padding: 5px;
+}
+
+.grid {
+    box-shadow: 0 0 10px 3px #777;
+    background-color: #fff;
+    text-align: center;
+    margin: 5px 15px 10px;
+    height: 250px;
+    padding-top: 20px;
+}
+
+.grid:hover {
+    border: 1px solid #dedede;
+    box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.9);
+}
+
+.grid h5 {
+    margin-top: 0.2em;
+    font-style: italic;
+}
+
+.grid h6 {
+    color: #2f2f2f;
+    margin-top: 0.5em;
+}
+
+.grid p {
+    color: #4a4a4a;
+    line-height: 1.2em;
+}
+
+.grid h6 b {
+    color: #7d3f98;
+}
+
+#experience .fa {
+    padding-right: 5%;
+    color: #a9071e;
+}
+
+#exp-slider {
+    display: none;
+}
+
+/* education */
+
+.education img {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 0 5% 2% 0;
+    border-radius: 10px;
+}
 
 /* keyframes */
 
@@ -602,30 +659,35 @@ div.bar_group__bar.thin {
     h3.heading {
         font-size: 3.5vw;
     }
-    h4, legend {
-        font-size: 2.8vw
+    h4 {
+        font-size: 2.5vw
+    }
+    .education img {
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 0.8vw;
     }
     h5 {
-        font-size: 2.5vw;
-    }
-    h6 {
         font-size: 2vw;
     }
-    p, td, a, i, fieldset, li {
+    h6 {
+        font-size: 1.7vw;
+    }
+    p, td, a, i, li {
         font-size: 1.5vw;
     }
     .social a {
-        width: 3vw;
-        height: 3vw;
-        font-size: 2vw;
+        width: 4vw;
+        height: 4vw;
+        font-size: 3.2vw;
     }
     .social .front, .social .back {
-        width: 3vw;
-        height: 3vw;
-        transform: translateZ(1.5vw);
+        width: 4vw;
+        height: 4vw;
+        transform: translateZ(2vw);
     }
     .social .back {
-        transform: rotateX(90deg) translateZ(1.5vw);
+        transform: rotateX(90deg) translateZ(2vw);
     }
     .dropdown .btn {
         font-size: 3vw;
@@ -637,8 +699,8 @@ div.bar_group__bar.thin {
         margin-bottom: 3vw;
     }
     .card-container, .card, .front, .back, .cardback, .card img {
-        width: 25vw;
-        height: 20vw;
+        width: 22vw;
+        height: 18vw;
     }
     .bar-ul li {
         padding: 0.1em 0;
@@ -650,8 +712,17 @@ div.bar_group__bar.thin {
     div.bar_group__bar.thin {
         padding-top: 0.9vw;
     }
-    .cardback fieldset {
-        margin-top: 2vw;
+    .cardback {
+        padding-top: 2vw;
+    }
+/*     #experience .row>div {
+        padding: 0;
+    } */
+    .grid {
+        height: 26vw;
+        padding-top: 0.5em;
+        margin: 1.5vw 1.5vw;
+        height: 20vw;
     }
 }
 
@@ -660,18 +731,23 @@ div.bar_group__bar.thin {
         font-size: 2.5vw;
     }
     h3.heading {
-        font-size: 3.2vw;
+        font-size: 3vw;
     }
-    h4, legend {
-        font-size: 2.6vw
+    h4 {
+        font-size: 2.7vw
+    }
+    .education img {
+        width: 2.7vw;
+        height: 2.7vw;
+        border-radius: 0.9vw;
     }
     h5 {
-        font-size: 2.3vw;
+        font-size: 2.2vw;
     }
     h6 {
-        font-size: 2vw;
+        font-size: 1.9vw;
     }
-    p, td, a, i, fieldset, li {
+    p, td, a, i, li {
         font-size: 1.7vw;
     }
     .card-container, .card, .front, .back, .cardback, .card img {
@@ -681,25 +757,31 @@ div.bar_group__bar.thin {
     td {
         line-height: 1.2em;
     }
-    .cardback fieldset {
-        margin-top: 0.5vw;
+    .cardback {
+        padding-top: 0.5vw;
     }
-    .cardback fieldset li {
+    .cardbac li {
         line-height: 1em;
+    }
+    .grid {
+        height: 26vw;
     }
 }
 
 @media screen and (max-width:850px) {
     .card-container, .card, .front, .back, .cardback, .card img {
-        width: 25vw;
-        height: 20vw;
+        width: 23vw;
+        height: 19vw;
     }
-    .cardback fieldset li {
+    .cardbac li {
         line-height: 1.2em;
+    }
+    .grid {
+        height: 24vw;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .topbar a {
         font-size: 2.7vw;
     }
@@ -709,16 +791,21 @@ div.bar_group__bar.thin {
     h3.heading {
         font-size: 3.4vw;
     }
-    h4, legend {
-        font-size: 2.7vw
+    h4 {
+        font-size: 2.9vw
+    }
+    .education img {
+        width: 2.9vw;
+        height: 2.9vw;
+        border-radius: 1vw;
     }
     h5 {
-        font-size: 2.5vw;
+        font-size: 2.4vw;
     }
     h6 {
         font-size: 2.1vw;
     }
-    p, td, a, i, fieldset, li {
+    p, td, a, i, li {
         font-size: 1.9vw;
     }
     img {
@@ -737,10 +824,13 @@ div.bar_group__bar.thin {
         line-height: 1.1em;
     }
     .skillsright {
-        padding-left: 0.5em;
+        padding-left: 1.2em;
     }
-    .cardback fieldset {
-        margin-top: 3vw;
+    .cardback {
+        padding-top: 5vw;
+    }
+    .grid {
+        height: 27vw;
     }
 }
 
@@ -754,8 +844,13 @@ div.bar_group__bar.thin {
     h3.heading {
         font-size: 4vw;
     }
-    h4, legend {
+    h4 {
         font-size: 3.6vw
+    }
+    .education img {
+        width: 3.6vw;
+        height: 3.6vw;
+        border-radius: 1.2vw;
     }
     h5 {
         font-size: 3.4vw;
@@ -763,7 +858,7 @@ div.bar_group__bar.thin {
     h6 {
         font-size: 3.2vw;
     }
-    p, td, a, i, fieldset, li {
+    p, td, a, i, li {
         font-size: 3vw;
     }
     .dropdown .btn {
@@ -806,20 +901,59 @@ div.bar_group__bar.thin {
     .card-container, .card, .front, .back, .cardback, .card img {
         width: 100%;
         height: 50vw;
-     }
-     
+    }
     #gallery .gallery-frame {
         display: none;
     }
     #gallery #gallery-slider {
         display: block;
     }
-    #gallery-slider .carousel-inner{
+    #gallery-slider .carousel-inner {
         width: 100%;
         padding: 20px;
     }
-    .cardback fieldset {
-        margin-top: 6vw;
+    .cardback {
+        padding-top: 10vw;
     }
-
+    #skills .bar {
+        display: none;
+    }
+    #skills-slide {
+        display: block;
+        width: 80%;
+    }
+    .skillsright {
+        padding-left: 2em;
+        padding-right: 1em;
+    }
+    body .b_label, body .bar_label_min, body .bar_label_max, body .b_tooltip span {
+        font-size: 2.8vw;
+    }
+    #skills-slide .carousel-inner {
+        height: 30vw;
+    }
+    #experience .row {
+        display: none;
+    }
+    .grid {
+        height: 38vw;
+        margin: 4vw;
+        padding: 2vw 0 0;
+        box-shadow: 0 0 3vw 0.2vw #444;
+    }
+    #exp-slider {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .grid:hover {
+        box-shadow: 0 0 4vw 0.1vw #111;
+    }
+    #education .row {
+        display: none;
+    }
+    #edu-slider {
+        display: block;
+        width: 95%;
+    }
 }
