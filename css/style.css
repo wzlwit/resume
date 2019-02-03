@@ -619,6 +619,7 @@ div.bar_group__bar.thin {
     margin: 5px 15px 10px;
     height: 250px;
     padding-top: 20px;
+    background-color: #fafae1;
 }
 
 .grid:hover {
