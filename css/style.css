@@ -84,6 +84,7 @@ body>.container {
 
 #about {
     margin-top: 5vw;
+    padding-left: 3vw;
 }
 
 body {
@@ -366,10 +367,6 @@ a.linkedin .front {
     padding: 2vw 0 0;
 }
 
-.aboutleft {
-    -webkit-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.6);
-            box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.6);
-}
 
 img {
     height: 25vw;
@@ -435,7 +432,7 @@ a:hover {
     color: #ff9900;
 } */
 
-.aboutright, #about-slide>div {
+.aboutleft .aboutright, #about-slide>div {
     height: 350px;
 }
 
@@ -447,6 +444,8 @@ a:hover {
     padding: 10vw 5vw;
     max-width: 500px;
     height: 100px;
+    -webkit-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.6);
 }
 
 .aboutright {
@@ -617,7 +616,7 @@ div.bar_group__bar.thin {
     background-color: #fff;
     text-align: center;
     margin: 5px 15px 10px;
-    height: 250px;
+    height: 260px;
     padding-top: 20px;
     background-color: #fafae1;
 }
@@ -926,6 +925,11 @@ form input:last-child {
         display: none;
     }
 }
+@media screen and (max-width:1500px){
+    .aboutleft {
+        height: 27vw;
+    }
+}
 
 @media screen and (max-width:1200px) {
     .container {
@@ -972,7 +976,7 @@ form input:last-child {
     .dropdown .btn {
         font-size: 3vw;
     }
-    .aboutleft, .aboutright, #about-slide>div {
+    .aboutright, #about-slide>div {
         height: 30vw;
     }
     .card-container, .front, .cardback {
