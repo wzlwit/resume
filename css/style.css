@@ -1,12 +1,3 @@
-.colorreference {
-    color: #a9071e #1034a6 #f90 #cfcb47;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
     line-height: 1em;
@@ -48,11 +39,11 @@ h4 {
 }
 
 h5 {
-    font-size: 32;
+    font-size: 28px;
 }
 
 h6 {
-    font-size: 24;
+    font-size: 24px;
 }
 
 h1, h2, h3, h4 h5, h6 {
@@ -60,11 +51,10 @@ h1, h2, h3, h4 h5, h6 {
     line-height: 1.1em;
 }
 
-p, td, a, i, li, span, input, label:not(.topbar>a>span) {
-    font-size: 20px;
+p, td, a, i, li, span, input, label {
+    font-size: 22px;
     line-height: 1.05em;
 }
-
 div {
     border-radius: 10px;
     margin: 0 auto;
@@ -170,15 +160,16 @@ a {
     text-align: right;
 }
 
-.topbar a {
-    font-size: 2vw;
+.topbar a span {
+     font-size: 2vw;
     margin-right: 3%;
-    padding: 0 1vw 0 0;
+    padding: 0 0.5vw  0;
     color: #1034a6;
     border-radius: 3px;
+    text-transform: uppercase;
 }
 
-.topbar a:hover {
+.topbar a span:hover {
     background-color: #1034a6;
     color: #fff;
 }
@@ -233,28 +224,34 @@ h2 {
     position: absolute;
     opacity: 0;
     color: #555;
-    animation: vanish 18s linear infinite 0s;
+    -webkit-animation: vanish 18s linear infinite 0s;
+            animation: vanish 18s linear infinite 0s;
     line-height: 1.5em;
 }
 
 .drop-words pre:nth-child(2) {
-    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
 }
 
 .drop-words pre:nth-child(3) {
-    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
 }
 
 .drop-words pre:nth-child(4) {
-    animation-delay: 9s;
+    -webkit-animation-delay: 9s;
+            animation-delay: 9s;
 }
 
 .drop-words pre:nth-child(5) {
-    animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
 }
 
 .drop-words pre:nth-child(6) {
-    animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
 }
 
 .social {
@@ -303,8 +300,10 @@ h2 {
     text-decoration: none;
     cursor: pointer;
     text-align: center;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     font-size: 40px;
 }
 
@@ -314,8 +313,10 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateZ(25px);
-    backface-visibility: visible;
+    -webkit-transform: translateZ(25px);
+            transform: translateZ(25px);
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
 }
 
 #social i {
@@ -331,8 +332,10 @@ h2 {
 }
 
 .social .back {
-    transform: rotateX(90deg) translateZ(18px);
-    backface-visibility: hidden;
+    -webkit-transform: rotateX(90deg) translateZ(18px);
+            transform: rotateX(90deg) translateZ(18px);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 a.github .front {
@@ -348,11 +351,13 @@ a.linkedin .front {
 }
 
 .social a:hover {
-    transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
 }
 
 .social a:hover .back {
-    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
 }
 
 /* about */
@@ -362,7 +367,8 @@ a.linkedin .front {
 }
 
 .aboutleft {
-    box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.6);
 }
 
 img {
@@ -458,11 +464,13 @@ a:hover {
 /* flip the pane when hovered */
 
 .card-container:not(.manual-flip):hover .card, .card-container.hover.manual-flip .card {
-    transform: rotateY( 180deg);
+    -webkit-transform: rotateY( 180deg);
+            transform: rotateY( 180deg);
 }
 
 .card-container.static:hover .card, .card-container.static.hover .card {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
 }
 
 .card-container, .card, .front, .back, .cardback, .card img {
@@ -476,15 +484,20 @@ a:hover {
 /* flip speed */
 
 .card {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
     transition: transform 1s;
-    transform-style: preserve-3d;
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     position: relative;
 }
 
 /* hide back of pane during swap */
 
 .front, .cardback {
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -503,7 +516,8 @@ a:hover {
 }
 
 .card-container, .front, .cardback {
-    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
 
@@ -520,7 +534,8 @@ a:hover {
 
 .card .cardback {
     height: 100%;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     margin: 0 auto;
 }
 
@@ -597,7 +612,8 @@ div.bar_group__bar.thin {
 }
 
 .grid {
-    box-shadow: 0 0 10px 3px #777;
+    -webkit-box-shadow: 0 0 10px 3px #777;
+            box-shadow: 0 0 10px 3px #777;
     background-color: #fff;
     text-align: center;
     margin: 5px 15px 10px;
@@ -607,7 +623,8 @@ div.bar_group__bar.thin {
 
 .grid:hover {
     border: 1px solid #dedede;
-    box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.9);
+            box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.9);
 }
 
 .grid h5 {
@@ -666,7 +683,8 @@ div.bar_group__bar.thin {
     width: 60px;
     height: 2px;
     margin: 0 auto;
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
     position: absolute;
     left: 40%;
     bottom: 40%;
@@ -727,6 +745,7 @@ input[type="checkbox"] {
     font-size: .9em;
     color: #333333;
     top: -1.3em;
+    -webkit-transition: all 0.125s;
     transition: all 0.125s;
 }
 
@@ -752,6 +771,7 @@ input[type="checkbox"] {
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
     pointer-events: none;
     font-weight: 400;
@@ -767,6 +787,7 @@ input[type="checkbox"] {
     position: absolute;
     bottom: 0;
     left: 0;
+    -webkit-transition: all 0.125s;
     transition: all 0.125s;
 }
 
@@ -781,7 +802,6 @@ input[type="checkbox"] {
 .styled-input input:focus~span, .styled-input textarea:focus~span {
     width: 100%;
     -webkit-transition: all 0.075s;
-    -moz-transition: all 0.075s;
     transition: all 0.075s;
 }
 
@@ -872,6 +892,23 @@ form input:last-child {
 
 /* drop words */
 
+@-webkit-keyframes vanish {
+    0% {
+        display: block;
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0;
+        display: none;
+    }
+}
+
 @keyframes vanish {
     0% {
         display: block;
@@ -910,10 +947,10 @@ form input:last-child {
     h6 {
         font-size: 1.7vw;
     }
-    p, td, a, i, li, span, input, label:not(.topbar>a>span) {
+    p, td, a, i, li, span, input, label {
         font-size: 1.5vw;
     }
-    .topbar a {
+    .topbar a span {
         font-size: 2.3vw;
     }
     .social a {
@@ -924,10 +961,12 @@ form input:last-child {
     .social .front, .social .back {
         width: 4vw;
         height: 4vw;
-        transform: translateZ(2vw);
+        -webkit-transform: translateZ(2vw);
+                transform: translateZ(2vw);
     }
     .social .back {
-        transform: rotateX(90deg) translateZ(2vw);
+        -webkit-transform: rotateX(90deg) translateZ(2vw);
+                transform: rotateX(90deg) translateZ(2vw);
     }
     .dropdown .btn {
         font-size: 3vw;
@@ -1000,10 +1039,10 @@ form input:last-child {
     h6 {
         font-size: 1.9vw;
     }
-    p, td, a, i, li, span, input, label:not(.topbar>a>span) {
+    p, td, a, i, li, span, input, label {
         font-size: 1.7vw;
     }
-    .topbar a {
+    .topbar a span {
         font-size: 2.5vw;
     }
     .card-container, .card, .front, .back, .cardback, .card img {
@@ -1058,10 +1097,10 @@ form input:last-child {
     h6 {
         font-size: 2.1vw;
     }
-    p, td, a, i, li, span, input, label:not(.topbar>a>span) {
+    p, td, a, i, li, span, input, label {
         font-size: 1.9vw;
     }
-    .topbar a {
+    .topbar a span {
         font-size: 2.7vw;
     }
     img {
@@ -1111,7 +1150,7 @@ form input:last-child {
     h6 {
         font-size: 3.2vw;
     }
-    p, td, a, i, li, span, input, label:not(.topbar>a>span) {
+    p, td, a, i, li, span, input, label {
         font-size: 3vw;
     }
     .topbar {
@@ -1136,10 +1175,12 @@ form input:last-child {
     .social .front, .social .back {
         width: 6vw;
         height: 6vw;
-        transform: translateZ(3vw);
+        -webkit-transform: translateZ(3vw);
+                transform: translateZ(3vw);
     }
     .social .back {
-        transform: rotateX(90deg) translateZ(3vw);
+        -webkit-transform: rotateX(90deg) translateZ(3vw);
+                transform: rotateX(90deg) translateZ(3vw);
     }
     .dropdown .btn {
         font-size: 6vw;
@@ -1195,7 +1236,8 @@ form input:last-child {
         height: 38vw;
         margin: 4vw;
         padding: 2vw 0 0;
-        box-shadow: 0 0 3vw 0.2vw #444;
+        -webkit-box-shadow: 0 0 3vw 0.2vw #444;
+                box-shadow: 0 0 3vw 0.2vw #444;
     }
     #exp-slider {
         display: block;
@@ -1203,7 +1245,8 @@ form input:last-child {
         margin: 0;
     }
     .grid:hover {
-        box-shadow: 0 0 4vw 0.1vw #111;
+        -webkit-box-shadow: 0 0 4vw 0.1vw #111;
+                box-shadow: 0 0 4vw 0.1vw #111;
     }
     #education .row {
         display: none;
